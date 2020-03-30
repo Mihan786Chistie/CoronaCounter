@@ -38,7 +38,7 @@ print()
 h_data = h_data[0]
 for row in h_data.find_all('tr'):
     for cell in row.find_all('td'):
-        allplace = (str(cell.text))
+        allplace = (str(cell.text).strip())
         P.append(allplace)
 
 
